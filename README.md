@@ -1,2 +1,4 @@
 # GetEmoji
-Demo project to help asnwer Stackoverflow Question: http://stackoverflow.com/q/34524322/1381708
+Demo project to help asnwer Stackoverflow Questions: 
+- http://stackoverflow.com/q/34524322/1381708
+- http://stackoverflow.com/q/33641962/1381708
