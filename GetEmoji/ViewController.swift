@@ -13,35 +13,47 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
-        //Range
+        
+        //Examples
+        
+        range()
+        
+        count()
+        
+        contains()
+    }
+    
+    func range() {
         
         let example: NSString = "👨‍👨‍👧‍👧😍"
         
         let ranges: NSArray = example.emo_emojiRanges()
-    
+        
         print(ranges)
-
+        
         for value in ranges {
             
             let range:NSRange = (value as! NSValue).rangeValue
             
             print(example.substringWithRange(range))
         }
+    }
+    
+    func count() {
         
-        // Count
+        let example: NSString = "string👨‍👨‍👧‍👧with😍emojis✊🏿"
         
-        let secondExample: NSString = "string👨‍👨‍👧‍👧with😍emojis✊🏿"
-
-        let emojiCount: NSInteger = secondExample.emo_emojiCount()
+        let emojiCount: NSInteger = example.emo_emojiCount()
         
         print(emojiCount)
+    }
+    
+    func contains() {
         
-        //Contains
-        
-        let containsEmoji: Bool = secondExample.emo_containsEmoji()
+        let example: NSString = "string👨‍👨‍👧‍👧with😍emojis✊🏿"
+
+        let containsEmoji: Bool = example.emo_containsEmoji()
         
         print(containsEmoji)
     }
 }
-
