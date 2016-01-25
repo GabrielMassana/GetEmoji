@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
 
-//        let example: NSString = "skin🎅🏿emoji👌🏻family👩‍👩‍👧‍👧"
+        //Range
+        
         let example: NSString = "👨‍👨‍👧‍👧😍"
         
         let ranges: NSArray = example.emo_emojiRanges()
@@ -27,6 +28,20 @@ class ViewController: UIViewController {
             
             print(example.substringWithRange(range))
         }
+        
+        // Count
+        
+        let secondExample: NSString = "string👨‍👨‍👧‍👧with😍emojis✊🏿"
+
+        let emojiCount: NSInteger = secondExample.emo_emojiCount()
+        
+        print(emojiCount)
+        
+        //Contains
+        
+        let containsEmoji: Bool = secondExample.emo_containsEmoji()
+        
+        print(containsEmoji)
     }
 }
 
